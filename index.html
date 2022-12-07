@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section>
+        <div class="logo">
+            <img src="./assets/italian-pizza-logo-by-Vexels.png" alt="">
+        </div>
+        <div class="formulario">
+            <div>
+                <h1>Formulário de Cadastro</h1>
+                <p>Cadastre-se abaixo para fazer o pedido das nossas deliciosas pizzas caseiras de fermentação natural!</p>
+                <p>A fermentação é um dos processos mais importantes da pizza. É um processo pelo qual fungos ou bactérias (fermento) geram energia e produzem gás (CO2). Esse processo é chamado de fermentação lenta ou longa fermentação.</p>
+                <p>Venha experimentar!</p>
+            </div>
+            <div>
+                <form action="/" method="post" class="formulario">
+                    <label for="">Nome:</label>
+                    <input type="text" name="nome" class="nome validar">
+                    
+                    <label for="">Sobrenome:</label>
+                    <input type="text" name="sobrenome" class="sobrenome validar">
+                    
+                    <label for="">CPF:</label>
+                    <input type="text" name="cpf" class="cpf validar">
+                    
+                    <label for="">Usuário:</label>
+                    <input type="text" name="usuario" class="usuario validar">
+                    
+                    <label for="">Senha:</label>
+                    <input type="password" name="senha" class="senha validar">
+                    
+                    <label for="">Repetir senha:</label>
+                    <input type="password" name="repetir-senha" class="repetir-senha validar">
+                    
+    
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="./validaCPF.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ff9966;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+section {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    margin: 4rem auto;
+    width: 100%;
+    padding: 3rem;
+}
+
+.logo img {
+    margin-top: -4rem;
+    width: 50vw;
+    height: 90vh;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+    margin-left: 3rem;
+}
+
+input {
+    padding: .5rem;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+label {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: .7rem;
+    background-color: #ff9966;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+    color: #ff9966;
+}
+
+@media (max-width: 1020px) {
+    section {
+        display: block;
+        overflow: hidden;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4rem;
+    }
+
+    .logo img {
+        width: 90vw;
+        height: 50vh;
+    }
+
+    html {
+        font-size: 11px;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+        margin-bottom: 4rem;
+    }
+
+    p, form {
+        margin-left: 0;
+    }
+
+}
